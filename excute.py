@@ -1,8 +1,8 @@
-'''import pyfiglet as pflt
+import pyfiglet as pflt
 import subprocess as sbpc
 from Color import *
 screenput=pflt.figlet_format("Vidit Shringi" , font = "isometric1")
-print(screenput)'''
+print(screenput)
 k=int(input("[+]\t1.)for IP And domian Name request:\n[+]\t2.)For CPU Information:\n[+]\t3.)For IFCONFIG:\n=:=:=:=:=:=:=:=:=:=:=:=>"))
 if k == 1:
     PING=pflt.figlet_format("WebsitePing")
@@ -11,12 +11,12 @@ if k == 1:
     i=input()
     sbpc.call("ping "+i,shell=True)
 elif k== 2:
-    LSCPU=pflt.figet_format("C_P_U...Infomation",font='5lineoblique')
+    LSCPU=pflt.figlet_format("CPU Infomation")
     print(LSCPU)
     sbpc.call("lscpu")
-    print("""<----!This Function Not available YET !---->""")
+    
 elif k==3:
-    IFF=pflt.figlet_format("IFCONFIG",font="dot")
+    IFF=pflt.figlet_format("IFCONFIG")
     print(IFF)
     sbpc.call("ifconfig")
 else:
@@ -32,7 +32,7 @@ print("ANSI_Compatible:")
 print(ANSI_Compatible.Color(120),"This is a test!", ANSI_Compatible.END)
 
 print("Formatting:")
-
+#font='5lineoblique'
 
 print("GColor:") # Gnome terminal supported
 print(GColor.RGB(204,100,145),"This is a test!", GColor.END)
