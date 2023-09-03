@@ -5,17 +5,17 @@ print(screenput)
 k=int(input("[+]\t1.)for IP And domian Name request:\n[+]\t2.)For CPU Information:\n[+]\t3.)For IFCONFIG:\n=:=:=:=:=:=:=:=:=:=:=:=>"))
 if k == 1:
     PING=pflt.figlet_format("WebsitePing")
-    print(Formatting.Bold,PING, Formatting.Reset)
+    print(PING)
     print("[+] Enter IP Address OR website name(Domain name):\t")
     i=input()
     sbpc.call("ping "+i,shell=True)
 elif k== 2:
-    LSCPU=pflt.figlet_format("CPU Infomation")
+    LSCPU=pflt.figlet_format("CPU information")
     print(LSCPU)
     sbpc.call("lscpu")
     
 elif k==3:
-    IFF=pflt.figlet_format("IFCONFIG")
+    IFF=pflt.figlet_format("Wireless connection")
     print(IFF)
     sbpc.call("ifconfig")
 else:
