@@ -1,6 +1,5 @@
 import pyfiglet as pflt
 import subprocess as sbpc
-from Color import *
 screenput=pflt.figlet_format("Vidit Shringi" , font = "isometric1")
 print(screenput)
 k=int(input("[+]\t1.)for IP And domian Name request:\n[+]\t2.)For CPU Information:\n[+]\t3.)For IFCONFIG:\n=:=:=:=:=:=:=:=:=:=:=:=>"))
